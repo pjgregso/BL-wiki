@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blocklords Wiki</title>
+    <link rel="stylesheet" type="text/css" href="journeystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Gameplay</a></li>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Guides</a></li>
+        </ul>
+      </nav>
+      <main id="content">
+        <h1>Welcome to the Complete Guide on the Join the Count Journey</h1>
+        <p>
+            Welcome to "Join the Count Journey," your strategic guide to mastering the game and claiming victory. Here, each interactive card is a chapter in your adventure, ready to be unveiled with a click. Plan your moves carefully—success hinges on staying ahead of the game.
+            
+            Beware, your survival is at stake. Keep your User Hp above 0 and Danger below 100, lest your quest ends in defeat. The end-of-story bonuses are as varied as the challenges you'll face, each altering the course of your tale.
+            
+            Prepare to make choices that will forge your destiny. Click, plan, and conquer!</p>
+        <!-- card content goes here -->
+
+        <!-- Episode 01 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 01</h2>
+            <p>
+              You arrive at Lord Mike 'The Count' Bisping's encampment, eager to
+              prove your worth. Almost immediately, you lock eyes with a rival
+              knight who sees you as competition.
+            </p>
+          </div>
+          <div class="card-body">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Offer a Friendly Greeting</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-30 Milk</td>
+                  <td>
+                    You approach your rival with a friendly gesture, hoping to
+                    diffuse the tension. This only seems to further antagonize
+                    him, adding fuel to his competitive fire.
+                  </td>
+                  <td class="red">+ 23 to 37 Danger</td>
+                  <td class="green">+ 0 to 287 Food</td>
+                </tr>
+                <tr>
+                  <td>Ignore the Knight</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-100 Food</td>
+                  <td>
+                    You decide to ignore the rival knight and focus on your
+                    goal. This approach draws the attention of a mysterious
+                    veteran knight who sees potential in you.
+                  </td>
+                  <td class="red">-6 to 12 HP AND +10 to 28 Danger</td>
+                  <td class="green">+ 0 to 159 Tools</td>
+                </tr>
+                <tr>
+                  <td>Challenge Him Directly</td>
+                  <td>Locked (Requires 10+ Charisma)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    You confront your riival directly, declaring your intention
+                    to best hin. This bold move catches the attention of the
+                    camp, earning you both admirers and detractors.
+                  </td>
+                  <td class="red">+6 to 11 Danger</td>
+                  <td class="green">+0 to 55 Milk</td>
+                </tr>
+                <tr>
+                  <td>Seek Advice</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-40 Coin</td>
+                  <td>
+                    You seek advice from seasoned knights in the camp,
+                    attracting the attention of a wise, old knight who offers to
+                    mentor you.
+                  </td>
+                  <td class="red">-6 to 14 Danger</td>
+                  <td class="green">+0 to 500 Wood</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Repeat this structure for other episodes -->
+        <!-- Episode 02 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 02</h2>
+            <p>
+              The Count's army is exclusive, and only the best will be allowed
+              to join. To cull out the weak, Lord Bisping announces the first
+              trial: a bare-Knuckle brawl against the rival knight from earlier.
+              The camp watches in anticipation.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fight Aggressively</td>
+                  <td>Physical prowess will help you on this choice.</td>
+                  <td class="blue">-100 Food</td>
+                  <td>
+                    You attack fiercely, overwhelming your rival but exhausting
+                    yourself in the process. Despite this, your victory earns
+                    Bisping's interest.
+                  </td>
+                  <td class="red">-5 to 15 User HP</td>
+                  <td class="green">+0 to 53 Meat</td>
+                </tr>
+                <tr>
+                  <td>Fight Defensively</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-60 Grain</td>
+                  <td>
+                    You maintain a defensive stance, frustrating your rival but
+                    conserving your strength. Your tactics, though not
+                    crowd-pleasing, pique Bisping's curiosity.
+                  </td>
+                  <td class="red">-6 to 14 HP AND +15 to 20 Danger</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td>Refuse to Fight</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-50 User Coin</td>
+                  <td>
+                    You refuse to engage in a fight, suggesting a peaceful
+                    resolution instead. This unexpected stance baffles the camp
+                    but intrigues a certain observant knight.
+                  </td>
+                  <td class="red">+14 to 20 Danger</td>
+                  <td class="green">+0 to 216 Wheat</td>
+                </tr>
+                <tr>
+                  <td>Cheat to Win</td>
+                  <td>Locked Choice (Requires Charisma/Potency 9+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    You employ underhanded tactics to secure youtr victory,
+                    gaining the ire of many, but impressing a small faction
+                    within the camp who admire your cunning.
+                  </td>
+                  <td class="red">+5 to 15 Danger</td>
+                  <td class="green">+101 Wheat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 03 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 03</h2>
+            <p>
+              Impressed by your performance, Bisping challenges you to a
+              bare-knuckle duel. The camp falls silent as all eyes are on you.
+              It's not just about the physical strength here, but also a test of
+              courage and character.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Accept with Honor</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-150 Stone</td>
+                  <td>
+                    You accept the challenge with honor and gratitude. A murmur
+                    of approval ripples through the crowd. Bisping raises an
+                    eyebrow, seemingly impressed by your valor. Regardless of
+                    the duel's outcome, your honor has earned you respect.
+                  </td>
+                  <td class="red">-2 to 10 User HP</td>
+                  <td class="green">+0 to 36 Bread</td>
+                </tr>
+                <tr>
+                  <td>Decline Respectfully</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-40 User Coin</td>
+                  <td>
+                    You respectfully decline, citing your exhaustion from the
+                    previous fight. A wave of murmors sweeps across the crowd,
+                    some voices carrying disappointment, while others express
+                    understanding. Bisping grunts, his face a mask of
+                    contemplation. Although you're unsure of his feelings,
+                    another knight sees an opportunity to turn you against
+                    Bisping.
+                  </td>
+                  <td class="red">+11 to 20 Danger</td>
+                  <td class="green">+639 Stone</td>
+                </tr>
+                <tr>
+                  <td>Challenge Bisping to a Game of Wits</td>
+                  <td>Locked (Requires Intellect 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Instead of engaging in another bout of fisticuffs, you
+                    propose a game of chess. Bispingg, taken aback,, agrees to
+                    your challenge. The tension mounts as the game progresses,
+                    both of you equally matched. In a surprising turn, you
+                    manage to corner Bisping's king. In a fit of frustration, he
+                    knocks the board away, scattering the pieces. Despite his
+                    unsportsmanlike reaction, there's a gleam of respect in his
+                    eyes.
+                  </td>
+                  <td class="red">+14 to 18 Danger</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td>Go on the Offensive</td>
+                  <td>Physical prowess will help you on this choice.</td>
+                  <td class="blue">-210 Wood</td>
+                  <td>
+                    You decide to throw the first punch, aiming to quickly
+                    subdue Bisping. The crowd gasps as Bisping stumbles back
+                    from your unexpected attack. He quickly regains his footing
+                    and retaliates, his experienced fists easily overpowering
+                    you. Despite the defeat, your audacious move has earned
+                    Bisping's amusement and curiosity.
+                  </td>
+                  <td class="red">-5 to 10 User HP</td>
+                  <td class="green">+101 Grain</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 04 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 04</h2>
+            <p>
+              After the bare-knuckle brawls, a grand feast is held to celebrate
+              the fights' valiant contestants. Amidst the laughter, tales, and
+              overflowing cups of mead, rumors of a plot against Lord Bisping
+              start circulating around the tables. The feast takes on a sinister
+              edge as whispered words float amongst the revelers. Are they
+              plotting against their gracious host?
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Warn Bisping</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-30 User Coin</td>
+                  <td>
+                    Putting loyalty above all else, you take it upon yourself to
+                    warn Bisping about the rumored plot. Bisping regards you
+                    with a thoughtful gaze, appreciating your concern. As a
+                    result, he assigns extra guards for the night, providing a
+                    degree of reassurance to the camp and marking you as a
+                    trustworthy ally.
+                  </td>
+                  <td class="red">+7 to 15 Danger</td>
+                  <td class="green">+0 to 277 Tools</td>
+                </tr>
+                <tr>
+                  <td>Keep Quiet</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-30 Milk</td>
+                  <td>
+                    Uncertain of the plot's authenticity and unsure who to
+                    trust, you choose to remain silent. The feast continues
+                    under the shadow of the whispered conspiracy, but you
+                    observe everything closely, gaining insights into the
+                    alliances and rivalries within the ccamp.
+                  </td>
+                  <td class="red">+10 to 20 Danger</td>
+                  <td class="green">+0 to 420 Food</td>
+                </tr>
+                <tr>
+                  <td>Challenge the Plotters</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-210 Wood</td>
+                  <td>
+                    Unable to tolerate the rumors, you publicly challenge those
+                    spreading the whispers. While some admire your direct
+                    approach, others see it as an impulsive act, confronting
+                    you. Nonetheless, the rumors stop, replaced by a tense
+                    silence, earning you a mix of respect and animosity in the
+                    camp.
+                  </td>
+                  <td class="red">-8 to 13 User HP</td>
+                  <td class="green">+274 Wheat</td>
+                </tr>
+                <tr>
+                  <td>Investigate Discreetly</td>
+                  <td>Locked (Requires Potential 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Choosing a covert approach, you subtly begin an
+                    ivnestigation. Probing into the matter allows you to unravel
+                    connections and information about your fellow knights,
+                    allowing you to piece together a clearer picture of the
+                    conspiracy, and helping you take preventative measures. Your
+                    resourcefulness impressess some knights, earning you allies
+                    in the camp.
+                  </td>
+                  <td class="green">-7 to 15 Danger</td>
+                  <td class="green">+138 Wood</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 05 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 05</h2>
+            <p>
+              The grand hall echoes with the sound of your footsteps as you
+              approach the high seat where Lord Bisping awaits. His fierce,
+              steely gaze penetrates you. The torchlight flickers, casting
+              shadows dancing on his battle-hardened face. There's an aura of
+              immense power and authority around him. "Explain yourserrlf," he
+              commands, his deep voice reverberating through the room.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Plead your Case</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-90 Meat</td>
+                  <td>
+                    You choose to plead your case. Straightening your back, you
+                    meet his gaze. You lay out your reasons clearly, asserting
+                    your conviction with undeniable firmness. Your words echo
+                    off the walls of the hall. As silence descends, you can
+                    almost hear your heartbeat. Bisping finally breaks the
+                    silence, his stern nod a silent acknowledgement of your
+                    conviction. Your relationship with him strengthens, and you
+                    feel a surge of might coursing through your veins.
+                  </td>
+                  <td class="red">+28 to 37 Danger</td>
+                  <td class="green">+489 to 733 Wood</td>
+                </tr>
+                <tr>
+                  <td>Apologize for your Actions</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-30 User Coin</td>
+                  <td>
+                    You choose to plead your case. Straightening your back, you
+                    meet his gaze. You lay out your reasons clearly, asserting
+                    your conviction with undeniable firmness. Your words echo
+                    off the walls of the hall. As silence descends, you can
+                    almost hear your heartbeat. Bisping finally breaks the
+                    silence, his stern nod a silent acknowledgement of your
+                    conviction. Your relationship with him strengthens, and you
+                    feel a surge of might coursing through your veins.
+                  </td>
+                  <td class="red">+5 to 14 Danger</td>
+                  <td class="green">+447 Food</td>
+                </tr>
+                <tr>
+                  <td>Challenge His Authority</td>
+                  <td>Locked (Unknown Requirement)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Boldly, you step forward, refusing to be intimidated. You
+                    challenge Bisping, questioning his methods, his leadership,
+                    his authority. The room goes deathly quiet. Anger flares up
+                    in Bisping's eyes. You have just provoked one of the
+                    fiercest warriors in the realm, and it feels...
+                    invigorating. This audacious at marks the start of a bitter
+                    rivalry. You're energized, but you know you've made a
+                    formidable enemy.
+                  </td>
+                  <td class="green">+3 to 5 User HP</td>
+                  <td class="green">+294 Tools</td>
+                </tr>
+                <tr>
+                  <td>Request to Leave</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-210 Wood</td>
+                  <td>
+                    Tired of the trials and tribulations of the camp, you decide
+                    to leave. You step forward and express your desire to
+                    depart. Bisping's eyes narrow, his lips pressed into a thin
+                    line. He says nothing but eventually, he waves you off, mark
+                    an eneventful end to your journey. You gain a slight
+                    increase in might as you leave, ready for whatever awaits
+                    you in the world beyhond.
+                  </td>
+                  <td class="red">+13 to 20 Danger</td>
+                  <td class="green">+42 Bread</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 06 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 06</h2>
+            <p>
+              The day after your confrontation with Bisping, an attempt is made
+              on his life during the adrenaline-fueled horse race. As the crowd
+              erupts into chaos, you notice a familiar figure in the turmoil -
+              your rival.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>RS Chance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Guard Bisping</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-30 Tools</td>
+                  <td>
+                    Driven by your new alliance, you fight your way through the
+                    panicking crowd and protect Bisping from the assassination
+                    attempt. His gratitude is apparent as he solidifies your
+                    place in his inner circle.
+                  </td>
+                  <td class="red">+34 to 47 Danger</td>
+                  <td class="green">+156 Stone</td>
+                </tr>
+                <tr>
+                  <td>Tackle the Assassin</td>
+                  <td>Physical prowess will help you on this choice.</td>
+                  <td class="blue">-15 Bread</td>
+                  <td>
+                    Ignoring your own safety, you chase after the assassin,
+                    plunging into a fierce confrontation. Regardless of the
+                    result, your bravery in facing the assailant solidifies your
+                    standing with Bisping and his followers
+                  </td>
+                  <td class="red">-3 to 10 User HP</td>
+                  <td class="green">+0 to 94 Milk</td>
+                </tr>
+                <tr>
+                  <td>Face off against your Rival</td>
+                  <td>Locked (Requires Physicality 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Amidst the chaos, you decide to face your rival directly,
+                    initiating a climactic duel. While this act of personal
+                    vengeance compromises your relationship with Bisping, the
+                    satisfaction of confronting your nemesis is undeniable.
+                  </td>
+                  <td class="red">+11 to 17 Danger</td>
+                  <td class="green">+76 Meat</td>
+                </tr>
+                <tr>
+                  <td>Depart from Bisping's Group</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-40 User Coin</td>
+                  <td>
+                    The violent events have left a deep impression on you, and
+                    you decideit's time to leave Bisping's group, setting off on
+                    your own journey.
+                  </td>
+                  <td class="red">+11 to 19 Danger</td>
+                  <td class="green">+126 Grain</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 07 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 07</h2>
+            <p>
+              The aftermath of the horse race assassination attempt has left
+              deep repercussions with Bisping's ranks. You are at the heart of
+              the storm, your actions in the pandemonium having set your course.
+              Today is the day to make your decisive move.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pledge Undying Loyalty to Bisping</td>
+                  <td>Last choice, choose wisely.</td>
+                  <td class="blue">-5 User Coin</td>
+                  <td>
+                    Lord Mike 'The Count' Bisping, is inviting brave souls to
+                    join his formidable army. His reputation precedes him as a
+                    demanding, yet capable leader. Are you ready to take on the
+                    challenge?
+                  </td>
+                </tr>
+                <tr>
+                  <td>Unmask the True Mastermind</td>
+                  <td>Locked (Requires Intelligence 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Lord Mike 'The Count' Bisping, is inviting brave souls to
+                    join his formidable army. His reputation precedes him as a
+                    demanding, yet capable leader. Are you ready to take on the
+                    challenge?
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Defeat Your Rival in Open Duel</td>
+                  <td>Last choice, choose wisely.</td>
+                  <td class="blue">-50 Wood Plank</td>
+                  <td>
+                    Lord Mike 'The Count' Bisping, is inviting brave souls to
+                    join his formidable army. His reputation precedes him as a
+                    demanding, yet capable leader. Are you ready to take on the
+                    challenge?
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Venture Into the Unknown Alone</td>
+                  <td>Last choice, choose wisely.</td>
+                  <td class="blue">-50 Stone Brick</td>
+                  <td>
+                    Lord Mike 'The Count' Bisping, is inviting brave souls to
+                    join his formidable army. His reputation precedes him as a
+                    demanding, yet capable leader. Are you ready to take on the
+                    challenge?
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <a href="/journey/count.html" class="block-button">Join The Count</a>
+          <a href="/journey/fyre.html" class="block-button">Fighting Fyre</a>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function toggleCardBody(header) {
+        var body = header.nextElementSibling;
+        if (body.style.display === "none") {
+          body.style.display = "block";
+        } else {
+          body.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
