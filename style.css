@@ -127,3 +127,104 @@ body {
         border-bottom: none;
     }
 }
+
+
+
+
+
+/* episode card start */
+
+/* episode cards start */
+.card {
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: #292828;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .card-body {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .episode-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .episode-table th,
+  .episode-table td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .green {
+    color: #4caf50;
+  }
+  
+  .red {
+    color: #f44336;
+  }
+  
+  .blue {
+    color: #2196f3;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Responsive styling if needed */
+  @media (max-width: 768px) {
+    .card {
+      margin: 10px;
+    }
+  }
+  
+  /* episode cards end */
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    #navbar {
+      flex-basis: auto;
+      min-height: auto;
+    }
+  
+    #hamburger-menu {
+      display: block;
+    }
+  
+    #menu {
+      display: none;
+    }
+  
+    #menu li a {
+      border-bottom: none;
+    }
+  }
+  
+
+  /* start sticky footer */
+
+  .sticky {
+    position: fixed; /* Fixed positioning */
+    bottom: 0;       /* Stick to the bottom */
+    width: 100%;     /* Take full width of the viewport */
+    background-color: #333; /* Just for visibility, change as needed */
+    color: white;    /* Text color, change as needed */
+    text-align: center; /* Center the text, optional */
+}

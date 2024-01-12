@@ -33,6 +33,7 @@ p {
 #navbar {
   background-color: #222;
   flex-basis: 200px;
+  min-width: 200px;
   min-height: 100vh;
   overflow: auto;
 }
