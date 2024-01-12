@@ -4,6 +4,20 @@
     <title>Blocklords Wiki</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MW8HTFW1WD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MW8HTFW1WD");
+    </script>
   </head>
   <!-- Add this div just after the opening <body> tag -->
   <div id="newsletterPopup" class="popup-overlay" style="display: none">
@@ -37,7 +51,6 @@
           <li><a href="./building.html">Building</a></li>
           <li><a href="./earlygame.html">Early Game</a></li>
           <li><a href="./newsletter.html">Newsletter</a></li>
-
         </ul>
       </nav>
       <main id="content">
@@ -50,226 +63,248 @@
           hidden gems in gameplay, and share expert insights that you won't find
           anywhere else. Gear up for insider strategies, epic battles, and
           kingdom-building hacks. Let's take your BLOCKLORDS experience to
-          legendary heights! 
-        <!-- More content goes here -->
-        <h2>Click the cards below to navigate to the complete guide for the  journey!</h2>
+          legendary heights!
+          <!-- More content goes here -->
+        </p>
+
+        <h2>
+          Click the cards below to navigate to the complete guide for the
+          journey!
+        </h2>
 
         <div class="card">
-            <div class="card-header" onclick="location.href='./journey/arthur.html'">
-              <h2>'Arthur's Ascent' - Episode 01</h2>
-              <p>
-                An unexpected message arrives from Lord Arthur, known for his peculiar whims. He's on a quest to transform himself into a muscle-bound titan and is looking for a skilled warrior.
-              </p>
-            </div>
-            <div class="card-body">
-              <table class="episode-table">
-                <thead>
-                  <tr>
-                    <th>Option</th>
-                    <th>Blurb</th>
-                    <th>Cost</th>
-                    <th>Story Result</th>
-                    <th>Damage Outcome</th>
-                    <th>Result Bonus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Offer to Train Him</td>
-                    <td>Charisma will help you on this choice.</td>
-                    <td class="blue">-100 Wheat</td>
-                    <td>
-                        You see this as an opportunity to help and earn some coin. You offer your services and begin to plan a grueling training regimen.
-
-                    </td>
-                    <td class="red">-7 to 9 User HP</td>
-                    <td class="green">+ 0 to 15 Meat</td>
-                  </tr>
-                  <tr>
-                    <td>Suggest a herbal Diet</td>
-                    <td>Potential will help you on this choice.</td>
-                    <td class="blue">-50 Bread</td>
-                    <td>
-                        You suggest an herbal diet, incorporating rare plants known for their invigorating properties. The concept of munching on unfamiliar plants gives Arthur pause, but he agrees.
-
-                    </td>
-                    <td class="red">+46 to 48 Danger</td>
-                    <td class="green">+ 0 to 34 Grain</td>
-                  </tr>
-                  <tr>
-                    <td>Introduce Meditative Excercises</td>
-                    <td>Intellect will help you on this choice.</td>
-                    <td class="blue">-50 User Coin</td>
-                    <td>
-                        You introduce a series of medittative exercises inspired by the camness of ancient monks, promising to improve both physical strength and mental focus. Arthur is enthusiastic about the novel approach.
-
-                    </td>
-                    <td class="red">+11 to 19 Danger</td>
-                    <td class="green">+0 to 241 Stone</td>
-                  </tr>
-                  <tr>
-                    <td>Locked Choice</td>
-                    <td>Locked</td>
-                    <td class="blue">N/A</td>
-                    <td>
-                      N/A
-                    </td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div
+            class="card-header"
+            onclick="location.href='./journey/arthur.html'"
+          >
+            <h2>'Arthur's Ascent' - Episode 01</h2>
+            <p>
+              An unexpected message arrives from Lord Arthur, known for his
+              peculiar whims. He's on a quest to transform himself into a
+              muscle-bound titan and is looking for a skilled warrior.
+            </p>
           </div>
-
-
+          <div class="card-body">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Offer to Train Him</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-100 Wheat</td>
+                  <td>
+                    You see this as an opportunity to help and earn some coin.
+                    You offer your services and begin to plan a grueling
+                    training regimen.
+                  </td>
+                  <td class="red">-7 to 9 User HP</td>
+                  <td class="green">+ 0 to 15 Meat</td>
+                </tr>
+                <tr>
+                  <td>Suggest a herbal Diet</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-50 Bread</td>
+                  <td>
+                    You suggest an herbal diet, incorporating rare plants known
+                    for their invigorating properties. The concept of munching
+                    on unfamiliar plants gives Arthur pause, but he agrees.
+                  </td>
+                  <td class="red">+46 to 48 Danger</td>
+                  <td class="green">+ 0 to 34 Grain</td>
+                </tr>
+                <tr>
+                  <td>Introduce Meditative Excercises</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-50 User Coin</td>
+                  <td>
+                    You introduce a series of medittative exercises inspired by
+                    the camness of ancient monks, promising to improve both
+                    physical strength and mental focus. Arthur is enthusiastic
+                    about the novel approach.
+                  </td>
+                  <td class="red">+11 to 19 Danger</td>
+                  <td class="green">+0 to 241 Stone</td>
+                </tr>
+                <tr>
+                  <td>Locked Choice</td>
+                  <td>Locked</td>
+                  <td class="blue">N/A</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         <div class="card">
-            <div class="card-header" onclick="location.href='./journey/count.html'">
-              <h2>'Join the Count' - Episode 01</h2>
-              <p>
-                You arrive at Lord Mike 'The Count' Bisping's encampment, eager to
-                prove your worth. Almost immediately, you lock eyes with a rival
-                knight who sees you as competition.
-              </p>
-            </div>
-            <div class="card-body">
-              <table class="episode-table">
-                <thead>
-                  <tr>
-                    <th>Option</th>
-                    <th>Blurb</th>
-                    <th>Cost</th>
-                    <th>Story Result</th>
-                    <th>Damage Outcome</th>
-                    <th>Result Bonus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Offer a Friendly Greeting</td>
-                    <td>Charisma will help you on this choice.</td>
-                    <td class="blue">-30 Milk</td>
-                    <td>
-                      You approach your rival with a friendly gesture, hoping to
-                      diffuse the tension. This only seems to further antagonize
-                      him, adding fuel to his competitive fire.
-                    </td>
-                    <td class="red">+ 23 to 37 Danger</td>
-                    <td class="green">+ 0 to 287 Food</td>
-                  </tr>
-                  <tr>
-                    <td>Ignore the Knight</td>
-                    <td>Intellect will help you on this choice.</td>
-                    <td class="blue">-100 Food</td>
-                    <td>
-                      You decide to ignore the rival knight and focus on your
-                      goal. This approach draws the attention of a mysterious
-                      veteran knight who sees potential in you.
-                    </td>
-                    <td class="red">-6 to 12 HP AND +10 to 28 Danger</td>
-                    <td class="green">+ 0 to 159 Tools</td>
-                  </tr>
-                  <tr>
-                    <td>Challenge Him Directly</td>
-                    <td>Locked (Requires 10+ Charisma)</td>
-                    <td class="blue">N/A</td>
-                    <td>
-                      You confront your riival directly, declaring your intention
-                      to best hin. This bold move catches the attention of the
-                      camp, earning you both admirers and detractors.
-                    </td>
-                    <td class="red">+6 to 11 Danger</td>
-                    <td class="green">+0 to 55 Milk</td>
-                  </tr>
-                  <tr>
-                    <td>Seek Advice</td>
-                    <td>Charisma will help you on this choice.</td>
-                    <td class="blue">-40 Coin</td>
-                    <td>
-                      You seek advice from seasoned knights in the camp,
-                      attracting the attention of a wise, old knight who offers to
-                      mentor you.
-                    </td>
-                    <td class="red">+6 to 14 Danger</td>
-                    <td class="green">+0 to 500 Wood</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div
+            class="card-header"
+            onclick="location.href='./journey/count.html'"
+          >
+            <h2>'Join the Count' - Episode 01</h2>
+            <p>
+              You arrive at Lord Mike 'The Count' Bisping's encampment, eager to
+              prove your worth. Almost immediately, you lock eyes with a rival
+              knight who sees you as competition.
+            </p>
           </div>
+          <div class="card-body">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Offer a Friendly Greeting</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-30 Milk</td>
+                  <td>
+                    You approach your rival with a friendly gesture, hoping to
+                    diffuse the tension. This only seems to further antagonize
+                    him, adding fuel to his competitive fire.
+                  </td>
+                  <td class="red">+ 23 to 37 Danger</td>
+                  <td class="green">+ 0 to 287 Food</td>
+                </tr>
+                <tr>
+                  <td>Ignore the Knight</td>
+                  <td>Intellect will help you on this choice.</td>
+                  <td class="blue">-100 Food</td>
+                  <td>
+                    You decide to ignore the rival knight and focus on your
+                    goal. This approach draws the attention of a mysterious
+                    veteran knight who sees potential in you.
+                  </td>
+                  <td class="red">-6 to 12 HP AND +10 to 28 Danger</td>
+                  <td class="green">+ 0 to 159 Tools</td>
+                </tr>
+                <tr>
+                  <td>Challenge Him Directly</td>
+                  <td>Locked (Requires 10+ Charisma)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    You confront your riival directly, declaring your intention
+                    to best hin. This bold move catches the attention of the
+                    camp, earning you both admirers and detractors.
+                  </td>
+                  <td class="red">+6 to 11 Danger</td>
+                  <td class="green">+0 to 55 Milk</td>
+                </tr>
+                <tr>
+                  <td>Seek Advice</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-40 Coin</td>
+                  <td>
+                    You seek advice from seasoned knights in the camp,
+                    attracting the attention of a wise, old knight who offers to
+                    mentor you.
+                  </td>
+                  <td class="red">+6 to 14 Danger</td>
+                  <td class="green">+0 to 500 Wood</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-          <!-- Episode 01 Card -->
+        <!-- Episode 01 Card -->
         <div class="card">
-            <div class="card-header" onclick="location.href='./journey/fyre.html'">
-              <h2>'Fighting Fyre' - Episode 01</h2>
-              <p>
-                  Without warning, your peaceful routine is shattered as Lord Forrest Fyre's men raid your dwelling, taking you captive. As you're brought before him, the malicious gleam in his eyes sends a chill down your spine.
-              </p>
-            </div>
-            <div class="card-body">
-              <table class="episode-table">
-                <thead>
-                  <tr>
-                    <th>Option</th>
-                    <th>Blurb</th>
-                    <th>Cost</th>
-                    <th>Story Result</th>
-                    <th>Damage Outcome</th>
-                    <th>Result Bonus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Attempt to Escape</td>
-                    <td>Physcial prowess will help you on this choice.</td>
-                    <td class="blue">-120 Meat</td>
-                    <td>
-                      You make a daring attempt to escape, but the guards quickly subdue you. Lord Fyre, amused by6 your boldness, decides to keep you close, furthering his twisted amusement.
-  
-                    </td>
-                    <td class="red">-8 to 15 User HP</td>
-                    <td class="green">+249 Wood</td>
-                  </tr>
-                  <tr>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td class="blue">N/A</td>
-                    <td>
-                      N/A
-                    </td>
-                    <td class="red">N/A</td>
-                    <td class="green">N/A</td>
-                  </tr>
-                  <tr>
-                    <td>Confront Lord Fyre</td>
-                    <td>Leadership will help you on this choice.</td>
-                    <td class="blue">-80 Bread</td>
-                    <td>
-                      You challenge Lord Fyre's actions, demanding your freedom. His amusement at your defiance is clear, and he decides to involve you mroe directly in his twisted plan to harness thunder.
-  
-                    </td>
-                    <td class="red">+31 to 35 Danger</td>
-                    <td class="green">+2248 Stone</td>
-                  </tr>
-                  <tr>
-                    <td>Pretend to Submit</td>
-                    <td>Charisma will help you on this choice.</td>
-                    <td class="blue">-40 Coin</td>
-                    <td>
-                      You put up a facade of submission, pledging loyalty to Lord Fyre. He seems pleased and commands you to assist him. in his dark plans. However, your deception might provide opportunities to sabotage his ambitions.
-  
-                    </td>
-                    <td class="red">+13 to 19 Danger</td>
-                    <td class="green">+25 Milk</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div
+            class="card-header"
+            onclick="location.href='./journey/fyre.html'"
+          >
+            <h2>'Fighting Fyre' - Episode 01</h2>
+            <p>
+              Without warning, your peaceful routine is shattered as Lord
+              Forrest Fyre's men raid your dwelling, taking you captive. As
+              you're brought before him, the malicious gleam in his eyes sends a
+              chill down your spine.
+            </p>
           </div>
-
+          <div class="card-body">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Attempt to Escape</td>
+                  <td>Physcial prowess will help you on this choice.</td>
+                  <td class="blue">-120 Meat</td>
+                  <td>
+                    You make a daring attempt to escape, but the guards quickly
+                    subdue you. Lord Fyre, amused by6 your boldness, decides to
+                    keep you close, furthering his twisted amusement.
+                  </td>
+                  <td class="red">-8 to 15 User HP</td>
+                  <td class="green">+249 Wood</td>
+                </tr>
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td class="blue">N/A</td>
+                  <td>N/A</td>
+                  <td class="red">N/A</td>
+                  <td class="green">N/A</td>
+                </tr>
+                <tr>
+                  <td>Confront Lord Fyre</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-80 Bread</td>
+                  <td>
+                    You challenge Lord Fyre's actions, demanding your freedom.
+                    His amusement at your defiance is clear, and he decides to
+                    involve you mroe directly in his twisted plan to harness
+                    thunder.
+                  </td>
+                  <td class="red">+31 to 35 Danger</td>
+                  <td class="green">+2248 Stone</td>
+                </tr>
+                <tr>
+                  <td>Pretend to Submit</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-40 Coin</td>
+                  <td>
+                    You put up a facade of submission, pledging loyalty to Lord
+                    Fyre. He seems pleased and commands you to assist him. in
+                    his dark plans. However, your deception might provide
+                    opportunities to sabotage his ambitions.
+                  </td>
+                  <td class="red">+13 to 19 Danger</td>
+                  <td class="green">+25 Milk</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </main>
     </div>
+
     <script>
       // Function to open the popup
       function openPopup() {
