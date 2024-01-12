@@ -11,16 +11,292 @@
             <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
             <ul id="menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Gameplay</a></li>
-                <li><a href="#">Characters</a></li>
+                <li><a href="../journeyguide.html">Journeys</a></li>
+                <li><a href="../info.html">Info</a></li>
+                <li><a href="../marketplace.html">Marketplace</a></li>
+
+                
                 <li><a href="#">World</a></li>
                 <li><a href="#">Guides</a></li>
             </ul>
         </nav>
         <main id="content">
-            <h1>Welcome to the Complete Guide on Fighting Fyre</h1>
-            <p>This is the ultimate resource for all things Blocklords.</p>
-            <!-- More content goes here -->
+            <h1>Welcome to the Complete Guide on the Fighting Fyre Journey</h1>
+        <p>
+            Welcome to the Fighting Fyre journey, your strategic guide to mastering this journey and claiming victory. Here, each interactive card is a chapter in your adventure, ready to be unveiled with a click. Plan your moves carefully—success hinges on staying ahead of the game.
+            
+            Beware, your survival is at stake. Keep your User Hp above 0 and Danger below 100, lest your quest ends in defeat. The end-of-story bonuses are as varied as the challenges you'll face, each altering the course of your tale.
+            
+            Prepare to make choices that will forge your destiny. Click, plan, and conquer!</p>
+        <!-- card content goes here -->
+
+        <!-- Episode 01 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 01</h2>
+            <p>
+                Without warning, your peaceful routine is shattered as Lord Forrest Fyre's men raid your dwelling, taking you captive. As you're brought before him, the malicious gleam in his eyes sends a chill down your spine.
+            </p>
+          </div>
+          <div class="card-body">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Attempt to Escape</td>
+                  <td>Physcial prowess will help you on this choice.</td>
+                  <td class="blue">-120 Meat</td>
+                  <td>
+                    You make a daring attempt to escape, but the guards quickly subdue you. Lord Fyre, amused by6 your boldness, decides to keep you close, furthering his twisted amusement.
+
+                  </td>
+                  <td class="red">-8 to 15 User HP</td>
+                  <td class="green">+249 Wood</td>
+                </tr>
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    N/A
+                  </td>
+                  <td class="red">N/A</td>
+                  <td class="green">N/A</td>
+                </tr>
+                <tr>
+                  <td>Confront Lord Fyre</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-80 Bread</td>
+                  <td>
+                    You challenge Lord Fyre's actions, demanding your freedom. His amusement at your defiance is clear, and he decides to involve you mroe directly in his twisted plan to harness thunder.
+
+                  </td>
+                  <td class="red">+31 to 35 Danger</td>
+                  <td class="green">+2248 Stone</td>
+                </tr>
+                <tr>
+                  <td>Pretend to Submit</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-40 Coin</td>
+                  <td>
+                    You put up a facade of submission, pledging loyalty to Lord Fyre. He seems pleased and commands you to assist him. in his dark plans. However, your deception might provide opportunities to sabotage his ambitions.
+
+                  </td>
+                  <td class="red">+13 to 19 Danger</td>
+                  <td class="green">+25 Milk</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Repeat this structure for other episodes -->
+        <!-- Episode 02 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 02</h2>
+            <p>
+                Lord Fyre reveals his sinister project - tp harness the power of thunder for his cruel intentions. He expects your full assistance, leaving you to navigate this precarious situation.
+
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sabotage the Project</td>
+                  <td>Intelligence will help you on this choice.</td>
+                  <td class="blue">-80 Milk</td>
+                  <td>
+                    You discreetly try to disrupt the project. Your small acts of defiance slow down the progress, causing Lord Fyre's impatience to grow. You buy some time, but also increase suspicion around you.
+
+                  </td>
+                  <td class="red">+46 to 48 Danger</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>Assist Reluctantly</td>
+                  <td>Leadership will help you on this choice.</td>
+                  <td class="blue">-60 User Coin</td>
+                  <td>
+                    With a heavy heart, you assist in Lord Fyre'ws project. Your cooperation earns you a degree of trust, possibly providing you with a future advantage. However, the thunder project moves forward, amplifying the danger it presents.
+
+                  </td>
+                  <td class="red">+11 to 20 Danger</td>
+                  <td>+16 Bread</td>
+                </tr>
+                <tr>
+                  <td>Feign Ignorance</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-100 Stone</td>
+                  <td>
+                    You act clueless about the technicalities of the project, slowing it's progress. Lord Fyre grows frustrated but remains oblivious to your act. This buys you some time, but how long will Lord Fyre tolerate your supposed incompetence.
+
+                  </td>
+                  <td class="red">+31 to 48 Danger</td>
+                  <td class="green">+110 Wheat</td>
+                </tr>
+                <tr>
+                  <td>Convince Lord Fyre of a Better Method</td>
+                  <td>Locked Choice (Requires Intelligence 11+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    N/A
+                  </td>
+                  <td class="red">+14 to 17 Danger</td>
+                  <td class="green">+25 Meat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 03 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 03</h2>
+            <p>
+                Discovery of your actions Lord Fyre grows suspicious of the constant delays. He confronts you, his gaze threatening. How you handle this situation could determnie your fate.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                  <th>Damage Outcome</th>
+                  <th>Result Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Blame a Coworker</td>
+                  <td>Intelligence will help you on this choice.</td>
+                  <td class="blue">-50 User Coin</td>
+                  <td>
+                    You deflect suspicion onto one of Fyre's other workers. The accused is taken away, earning you a temporary respite but at a terrible cost.
+
+                  </td>
+                  <td class="red">+53 to 55 Danger</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>Admit and Beg for Mercy</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-140 Wood</td>
+                  <td>
+                    You confess to your actions, begging for mercy. Fyre, amused by your desperation, decides to make you a spectacle for his subjects, intending to make an example out of you.
+                  </td>
+                  <td class="red">-6 to 10 User HP</td>
+                  <td class="green">+45 Grain</td>
+                </tr>
+                <tr>
+                  <td>Counter Accuse Lord Fyre</td>
+                  <td>Leadershpi will help you on this choice.</td>
+                  <td class="blue">-60 Wheat</td>
+                  <td>
+                    In a bold move, you accuse Lord Fyre of being the true obstacle to the project's success. The audacity of your words stuns the court, and Fyre, fuming, promises to make you pay.
+                  </td>
+                  <td class="red">+29 to 40 Danger</td>
+                  <td class="green">+177 Food</td>
+                </tr>
+                <tr>
+                  <td>Claim Innocence</td>
+                  <td>Locked (Requires Charisma 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    You maintain your innocence, sticking to your story despite Fyre's accusations. Intrigued by your steadfastness, Fyre decides to keep a closer eye on you, increasing your danger and potential to disrupt his plans.
+                  </td>
+                  <td class="green">+14/25 User Coin</td>
+                  <td class="green">+60 Wood Planks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Episode 04 Card -->
+        <div class="card">
+          <div class="card-header" onclick="toggleCardBody(this)">
+            <h2>Episode 04</h2>
+            <p>
+                The situation comes to a head. Lord Fyre, incensed and paranoid, prepares to test his thunder machine, intending to make you its first victim.
+            </p>
+          </div>
+          <div class="card-body" style="display: none;">
+            <table class="episode-table">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Blurb</th>
+                  <th>Cost</th>
+                  <th>Story Result</th>
+                
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Overload the machine</td>
+                  <td>Intelligence will help you on this choice.</td>
+                  <td class="blue">-100 User Coin</td>
+                  <td>
+                    Last Choice, you cannot fail.
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>Appeal to the Court</td>
+                  <td>Charisma will help you on this choice.</td>
+                  <td class="blue">-120 Food</td>
+                  <td>
+                    Last Choice, you cannot fail.
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>Face the Machine Bravely</td>
+                  <td>Locked (Requires Physicality 10+)</td>
+                  <td class="blue">N/A</td>
+                  <td>
+                    Last Choice, you cannot fail.
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>Beg for Mercy</td>
+                  <td>Potential will help you on this choice.</td>
+                  <td class="blue">-30 User Coin</td>
+                  <td>
+                    Last Choice, you cannot fail.
+                  </td>
+                 
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
 
 
 

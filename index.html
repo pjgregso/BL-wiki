@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Blocklords Wiki</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div class="container">
-        <nav id="navbar">
-            <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gameplay</a></li>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Guides</a></li>
-            </ul>
-        </nav>
-        <main id="content">
-            <h1>Welcome to Blocklords Wiki</h1>
-            <p>This is the ultimate resource for all things Blocklords.</p>
-            <!-- More content goes here -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <!-- Add this div just after the opening <body> tag -->
+  <div id="newsletterPopup" class="popup-overlay" style="display: none">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <iframe
+        width="940"
+        height="605"
+        src="https://f0aae77f.sibforms.com/serve/MUIFAPzJTqkM1p_h2Db-bI0ZvcRj1KikZjSkVfYP9ZnL05EkFBDoM8LBmd99xgXaBuip-M0RuIEKdu3rpW4UcopUKWgbQjq6Jab8wVQ1jDsPPeqZPqiSSODzkuigUtbib4BdxfFzqxdAzpU0iz9a9ZWJAy1zcxf33IEY7Rgc-WwnohEXpKcLlyUgWUiN_V03WpIGfcWfXeQSs_Ip"
+        frameborder="0"
+        scrolling="auto"
+        allowfullscreen
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        "
+      ></iframe>
+    </div>
+  </div>
 
-            <div class="button-container">
-                <a href="/journey/arthur.html" class="block-button">Arthur's Ascent</a>
-                <a href="/journey/count.html" class="block-button">Join The Count</a>
-                <a href="/journey/fyre.html" class="block-button">Fighting Fyre</a>
-            </div>
-        </main>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./journeyguide.html">Journeys</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./marketplace.html">Marketplace</a></li>
+        </ul>
+      </nav>
+      <main id="content">
+        <h1>Welcome to Blocklords Wiki</h1>
+        <p>
+          Hey there, BLOCKLORDS enthusiasts! Welcome to your go-to haven for
+          mastering the art of medieval strategy in BLOCKLORDS. This is where
+          seasoned players like you up their game. Ready to outsmart your foes
+          and dominate the realm? We dive deep into advanced tactics, uncover
+          hidden gems in gameplay, and share expert insights that you won't find
+          anywhere else. Gear up for insider strategies, epic battles, and
+          kingdom-building hacks. Let's take your BLOCKLORDS experience to
+          legendary heights!
+        </p>
+        <!-- More content goes here -->
+
+        <div class="button-container">
+          <a href="/journey/arthur.html" class="block-button"
+            >Arthur's Ascent</a
+          >
+          <a href="/journey/count.html" class="block-button">Join The Count</a>
+          <a href="/journey/fyre.html" class="block-button">Fighting Fyre</a>
+        </div>
+      </main>
     </div>
     <script>
-        var menu = document.getElementById("menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
+      // Function to open the popup
+      function openPopup() {
+        document.getElementById("newsletterPopup").style.display = "block";
+      }
+
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById("newsletterPopup").style.display = "none";
+      }
+
+      // Check if it's the first visit
+      function checkFirstVisit() {
+        if (localStorage.getItem("hasVisited") !== "true") {
+          openPopup();
+          localStorage.setItem("hasVisited", "true");
+        }
+      }
+
+      // Call checkFirstVisit() when the window loads
+      window.onload = checkFirstVisit;
     </script>
-</body>
+  </body>
 </html>
