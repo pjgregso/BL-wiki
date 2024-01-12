@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.grid {
+    padding: 15px;
+
+}
+
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+#navbar {
+    background-color: #222;
+    flex-basis: 200px;
+    min-width: 200px;
+    min-height: 100vh;
+    overflow: visible;
+}
+
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+
+/* start of building table css */
+
+.collapsible {
+    display: none;
+}
+.nan-value::before {
+    content: "";
+}   
+
+table {
+    border-collapse: collapse; /* Ensures that the border is collapsed into a single border */
+    background-color: #333; /* Sets the background color of the table */
+    color: white; /* Sets the text color to white */
+}
+
+table, th, td {
+    border: 1 solid white;
+}
+
+th, td {
+
+    padding: 8px;
+}
